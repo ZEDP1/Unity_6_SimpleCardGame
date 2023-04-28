@@ -29,25 +29,14 @@ public class Gamemanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        card1_renderer = card1.GetComponent<SpriteRenderer>();
-        card1_renderer.sprite = my_sprites[0];
-        card_list.Add(card1_renderer.sprite.name);
+        for (int i = 0; i < card_array.Length; i++)
+        {
+            sr_array[i] = card_array[i].GetComponent<SpriteRenderer>();
+            sr_array[i] =
+        }
 
-        card2_renderer = card2.GetComponent<SpriteRenderer>();
-        card2_renderer.sprite = my_sprites[1];
-        card_list.Add(card2_renderer.sprite.name);
-
-        card3_renderer = card3.GetComponent<SpriteRenderer>();
-        card3_renderer.sprite = my_sprites[2];
-        card_list.Add(card3_renderer.sprite.name);
-
-        card4_renderer = card4.GetComponent<SpriteRenderer>();
-        card4_renderer.sprite = my_sprites[3];
-        card_list.Add(card4_renderer.sprite.name);
-
-        card5_renderer = card5.GetComponent<SpriteRenderer>();
-        card5_renderer.sprite = my_sprites[4];
-        card_list.Add(card5_renderer.sprite.name);
+        Debug.Log(card_list[0] + " " + card_list[1] + " " + card_list[2] + " "
+                   + card_list[3] + " " + card_list[4]);
     }
 
     // Update is called once per frame
