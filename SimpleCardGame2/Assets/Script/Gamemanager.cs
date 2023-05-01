@@ -32,7 +32,7 @@ public class Gamemanager : MonoBehaviour
         for (int i = 0; i < card_array.Length; i++)
         {
             sr_array[i] = card_array[i].GetComponent<SpriteRenderer>();
-            sr_array[i] =
+            sr_array[i] = 
         }
 
         Debug.Log(card_list[0] + " " + card_list[1] + " " + card_list[2] + " "
